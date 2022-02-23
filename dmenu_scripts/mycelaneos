@@ -1,16 +1,17 @@
 #!/bin/bash
 
-mycelaneos=$(echo -e "browser\nrange\nrandr\nappearance\ncommander\nmail\nfiles\ngimp\ngba\natari" | dmenu -i -fn "Awesome-14" -nb "#649" -nf "#ff9926" -sb "#f91" -sf "#32f")
+mycelaneos=$(echo -e "browser\nrange\nrandr\nappearance\ncommander\nmail\nfiles\ngimp\ntelegram\ngba\natari" | dmenu -i -fn "Awesome-14" -nb "#649" -nf "#ff9926" -sb "#f91" -sf "#32f")
 
 case "$mycelaneos" in
         browser) waterfox  ;;
-        range) st ranger  ;;
+        range) kitty ranger  ;;
         randr) arandr  ;;
         appearance) lxappearance  ;;
-        commander) st mc  ;;
+        commander) kitty mc  ;;
         mail) geary  ;;
         files) pcmanfm  ;;
         gimp) gimp  ;;
+        telegram) telegram-desktop  ;;
         gba) mgba-qt  ;;
         atari) stella  ;;
         *) echo "No option has been selected"  ;;
