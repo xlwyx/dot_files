@@ -6,7 +6,7 @@ case "$r" in
         reboot) doas shutdown -r now  ;;
         shutdown) doas shutdown -h now  ;;
         shuttimer) doas shutdown -t 8:20  ;;
-        cancel) doas openrc-shutdown -c  ;;
+        cancel) doas shutdown -c  ;;
         *) echo "No option has been selected" ;;
 esac
 d_shutdown.sh (END)
