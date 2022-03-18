@@ -1,0 +1,97 @@
+##############################################
+# Zathura settings                        ###
+############################################
+
+" Colors
+set notification-error-bg       "#2E3440"
+set notification-error-fg       "#BF616A"
+set notification-warning-bg     "#ECD6C9"
+set notification-warning-fg     "#D08770"
+set notification-bg             "#C9ECE8"
+set notification-fg             "#D8DEE9"
+
+set completion-bg               "#042730"
+set completion-fg               "#D8DEE9"
+set completion-group-bg         "#3B4252"
+set completion-group-fg         "#D8DEE9"
+set completion-highlight-bg     "#88C0D0"
+set completion-highlight-fg     "#3B4252"
+
+set index-bg                    "#2E3440"
+set index-fg                    "#8FBCBB"
+set index-active-bg             "#8FBCBB"
+set index-active-fg             "#2E3440"
+
+set inputbar-bg                 "#2E3440"
+set inputbar-fg                 "#E5E9F0"
+
+set statusbar-bg                "#2E3440"
+set statusbar-fg                "#E5E9F0"
+
+set highlight-color             "#ACE1C3"
+set highlight-active-color      "#CBE1AC"
+
+set default-bg                  "#FFEDD8"
+set default-fg                  "#FFC1BE"
+set render-loading              "true"
+set render-loading-bg           "#2E3440"
+set render-loading-fg           "#434C5E"
+
+set recolor-lightcolor          "#2D0715"
+set recolor-darkcolor           "#646F76"
+set recolor                     "true"
+
+# Clipboard
+set selection-clipboard clipboard
+
+# Search
+set incremental-search true
+set search-adjust true
+
+set adjust-open width
+
+# One page per row by default
+set page-per-row 1
+
+# Stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.04
+set scroll-step 100
+
+# Zoom settings
+set zoom-min 10
+set guioptions ""
+
+# Typography
+set font "Fantasque Nerd Fond 11"
+
+###########################################
+# Zathura mappings                     ###
+#########################################
+
+# Zoom in/out
+map z zoom in
+map Z zoom-out
+
+# Toggle mode
+map D toggle_page_mode
+
+# Scroll
+map u scroll half-up
+map d scroll half-down
+
+# Fullscreen
+map [normal]      <F11> toggle_fullscreen
+map [fullscreen]  <F11> toggle_fullscreen
+
+map [normal]      <C-r> reload
+map [fullscreen]  <C-r> reload
+
+# Go to start
+map g goto top
+
+# Print
+map p print
+
+
+
