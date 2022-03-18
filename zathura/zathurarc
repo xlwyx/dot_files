@@ -38,7 +38,7 @@ set default-fg                  "#FFC1BE"
 #set render-loading-fg           "#434C5E"
 
 set recolor-lightcolor          "#1E1E2D"
-set recolor-darkcolor           "#996666"
+set recolor-darkcolor           "#191919"
 set recolor                     "true"
 
 # Clipboard
@@ -87,5 +87,8 @@ map [fullscreen]  <F11> toggle_fullscreen
 map [normal]      <C-r> reload
 map [fullscreen]  <C-r> reload
 
-
+# Go to start
 map g goto top
+
+# Print
+map p print
