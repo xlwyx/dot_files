@@ -4,9 +4,9 @@ return {
 
   colors = {
       -- The default text color
-      foreground = "#7285a5",
+      foreground = "#813f0b",
       -- The default background color
-      background = "#89cfef",
+      background = "#0f52ba",
 
       -- Overrides the cell background color when the current cell is occupied by the
       -- cursor and the cursor style is set to Block
@@ -57,32 +57,18 @@ return {
 
     -- The overall background color of the tab bar when
     -- the window is focused
-    active_titlebar_bg = "#95c8d8",
+    active_titlebar_bg = "#ffe5b4",
 
     -- The overall background color of the tab bar when
     -- the window is not focused
-    inactive_titlebar_bg = "#c7c6c1",
+    inactive_titlebar_bg = "#fffdd0",
   },
 
   colors = {
     tab_bar = {
       -- The color of the inactive tab bar edge/divider
-      inactive_tab_edge = "#043927",
+      inactive_tab_edge = "#a45a52",
     },
-  },
-
-  window_background_image = "~/Picturesterm_wall/Linear_gradient.jpg",
-
-  window_background_image_hsb = {
-    -- Darken the background image by reducing it to 1/3rd
-    brightness = 0.3,
-
-    -- You can adjust the hue by scaling its value.
-    -- a multiplier of 1.0 leaves the value unchanged.
-    hue = 1.0,
-
-    -- You can adjust the saturation also.
-    saturation = 1.0,
   },
 
   -- You can specify some parameters to influence the font selection;
@@ -112,9 +98,9 @@ return {
     -- Accepts CSS style color specs, from named colors, through rgb
     -- strings and more
     colors = {
-      "#fffdd0",
-      "#f9e29c",
-      "#ffe5b4"
+      "#131e3a",
+      "#003151",
+      "#1c2951"
     },
 
     -- Instead of specifying `colors`, you can use one of a number of
@@ -153,9 +139,9 @@ return {
 
   -- This increases color saturation by 50%
   foreground_text_hsb = {
-    hue = 1.5,
+    hue = 0.1,
     saturation = 1.0,
-    brightness = 0.1,
+    brightness = 0.8,
   },
 
   hide_tab_bar_if_only_one_tab = true,
@@ -174,8 +160,8 @@ return {
   -- This shows a animation
   animation_fps = 1,
   
-  window_backbground_opacity = 0.2,
-  text_background_opacity = 0.4,
+  window_backbground_opacity = 0.3,
+  text_background_opacity = 0.2,
 
   -- How many lines of scrollback you want to retain per tab
   scrollback_lines = 3500,
