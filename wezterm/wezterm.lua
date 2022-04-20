@@ -6,7 +6,7 @@ return {
       -- The default text color
       foreground = "#813f0b",
       -- The default background color
-      background = "#0f52ba",
+      background = "#13282a",
 
       -- Overrides the cell background color when the current cell is occupied by the
       -- cursor and the cursor style is set to Block
@@ -90,8 +90,8 @@ return {
   -- This increases color saturation by 50%
   foreground_text_hsb = {
     hue = 0.1,
-    saturation = 1.0,
-    brightness = 0.8,
+    saturation = 0.9,
+    brightness = 0.6,
   },
 
   hide_tab_bar_if_only_one_tab = true,
