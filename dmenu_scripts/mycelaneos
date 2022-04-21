@@ -4,11 +4,11 @@ mycelaneos=$(echo -e "browser\nrange\nrandr\nscreenshot\nappearance\ncommander\n
 
 case "$mycelaneos" in
         browser) waterfox  ;;
-        range) kitty ranger  ;;
+        range) urxvt -e ranger  ;;
         randr) arandr  ;;
         screenshot) flameshot  ;; 
         appearance) lxappearance  ;;
-        commander) kitty mc  ;;
+        commander) urxvt -e mc  ;;
         mail) geary  ;;
         files) pcmanfm  ;;
         pass) keepassxc  ;;
