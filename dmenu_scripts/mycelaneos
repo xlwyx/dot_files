@@ -1,0 +1,19 @@
+#!/bin/sh
+
+mycelaneos=$(echo -e "browser\nrange\nrandr\nappearance\ncommander\nmail\nfiles\ngimp\ntelegram\ngba\natari" | dmenu -i -fn "Awesome-11" -nb "#649" -nf "#ff9926" -sb "#f91" -sf "#32f")
+
+case "$mycelaneos" in
+        browser) firefox  ;;
+        range) alacritty -e ranger  ;;
+        randr) arandr  ;;
+        appearance) lxappearance  ;;
+        commander) alacritty -e mc  ;;
+        mail) thuderbird  ;;
+        files) thunar  ;;
+        gimp) gimp  ;;
+        telegram) telegram-desktop  ;;
+        gba) mgba-qt  ;;
+        atari) stella  ;;
+        *) echo "No option has been selected"  ;;
+esac
+
