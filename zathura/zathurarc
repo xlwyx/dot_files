@@ -2,44 +2,44 @@
 # Zathura settings                        ###
 ############################################
 
-" Colors
-set notification-error-bg       "#2E3440"
-set notification-error-fg       "#BF616A"
-set notification-warning-bg     "#ECD6C9"
-set notification-warning-fg     "#D08770"
-set notification-bg             "#C9ECE8"
-set notification-fg             "#D8DEE9"
+" Colors "
+set default-fg                "#CAD3F5"
+set default-bg 			          "#1B4965"
 
-set completion-bg               "#042730"
-set completion-fg               "#D8DEE9"
-set completion-group-bg         "#3B4252"
-set completion-group-fg         "#D8DEE9"
-set completion-highlight-bg     "#88C0D0"
-set completion-highlight-fg     "#3B4252"
+set completion-bg		          "#BABD8D"                   
+set completion-fg		          "#CAD3F5"
+set completion-highlight-bg	  "#03071E"
+set completion-highlight-fg	  "#CAD3F5"
+set completion-group-bg		    "#29305C"
+set completion-group-fg		    "#8AADF4"
 
-set index-bg                    "#2E3440"
-set index-fg                    "#8FBCBB"
-set index-active-bg             "#8FBCBB"
-set index-active-fg             "#2E3440"
+set statusbar-fg		          "#CAD3F5"
+set statusbar-bg		          "#363A4F"
 
-set inputbar-bg                 "#2E3440"
-set inputbar-fg                 "#E5E9F0"
+set notification-bg		        "#D0EFB1"
+set notification-fg		        "#CAD3F5"
+set notification-error-bg	    "#363A4F"
+set notification-error-fg	    "#ED8796"
+set notification-warning-bg	  "#363A4F"
+set notification-warning-fg	  "#FAE3B0"
 
-set statusbar-bg                "#2E3440"
-set statusbar-fg                "#E5E9F0"
+set inputbar-fg			          "#CAD3F5"
+set inputbar-bg 		          "#363A4F"
 
-set highlight-color             "#ACE1C3"
-set highlight-active-color      "#CBE1AC"
+set recolor-lightcolor		    "#24273A"
+set recolor-darkcolor		      "#CAD3F5"
 
-set default-bg                  "#FFEDD8"
-set default-fg                  "#FFC1BE"
-set render-loading              "true"
-set render-loading-bg           "#2E3440"
-set render-loading-fg           "#434C5E"
+set index-fg			            "#CAD3F5"
+set index-bg			            "#24273A"
+set index-active-fg		        "#CAD3F5"
+set index-active-bg		        "#363A4F"
 
-set recolor-lightcolor          "#2D0715"
-set recolor-darkcolor           "#646F76"
-set recolor                     "true"
+set render-loading-bg		      "#24273A"
+set render-loading-fg		      "#CAD3F5"
+
+set highlight-color		        "#F8961E"
+set highlight-fg              "#F5BDE6"
+set highlight-active-color	  "#F5BDE6"
 
 # Clipboard
 set selection-clipboard clipboard
