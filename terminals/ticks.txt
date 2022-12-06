@@ -1,0 +1,14 @@
+#################################################################
+--------------------- xterm & urxvt ----------------------------
+################################################################
+
+Both Xterm and urxvt are added to ".Xresources" in $Home...!
+
+-- And --
+# restart terms
+xrdb .Xresources
+xrdb -merge .Xresources
+
+# Manage configs
+add to .xinitrc: xrdb .Xresources
+
