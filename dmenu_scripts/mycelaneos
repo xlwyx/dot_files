@@ -8,7 +8,7 @@ case "$mycelaneos" in
         randr) arandr  ;;
         appearance) lxappearance  ;;
         commander) alacritty -e mc  ;;
-        mail) thuderbird  ;;
+        mail) thunderbird  ;;
         files) thunar  ;;
         gimp) gimp  ;;
         telegram) telegram-desktop  ;;
