@@ -1,6 +1,6 @@
 #!/bin/bash
 
-r=$(echo -e "reboot\nshutdown\nshuttimer\ncancel" | dmenu -i -fn "Awesome-20" -nb "#455" -nf "#ff9860" -sb "#f56" -sf "#03f")
+r=$(echo -e "reboot\nshutdown\nshuttimer\ncancel" | dmenu -i -fn "Awesome-9" -nb "#455" -nf "#ff9860" -sb "#f56" -sf "#03f")
 
 case "$r" in
         reboot) doas shutdown -r now  ;;
@@ -9,4 +9,3 @@ case "$r" in
         cancel) doas shutdown -c  ;;
         *) echo "No option has been selected" ;;
 esac
-d_shutdown.sh (END)
