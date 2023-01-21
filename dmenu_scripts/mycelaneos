@@ -9,7 +9,7 @@ case "$mycelaneos" in
         appearance) lxappearance  ;;
         commander) alacritty -e mc  ;;
         mail) thunderbird  ;;
-        files) thunar  ;;
+        files) pcmanfm  ;;
         gimp) gimp  ;;
         telegram) telegram-desktop  ;;
         gba) mgba-qt  ;;
