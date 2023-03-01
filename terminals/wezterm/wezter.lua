@@ -4,9 +4,9 @@ return {
 
   colors = {
       -- The default text color
-      foreground = 'silver',
+      foreground = 'blue',
       -- The default background color
-      background = 'white',
+      background = 'black',
 
       -- Overrides the cell background color when the current cell is occupied by the
       -- cursor and the cursor style is set to Block
