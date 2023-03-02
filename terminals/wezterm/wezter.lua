@@ -1,45 +1,46 @@
-local wezterm = require('wezterm')
+local wezterm = require 'wezterm'
 
 return {
+  term = 'wezterm',
 
   colors = {
-      -- The default text color
-      foreground = 'blue',
-      -- The default background color
-      background = 'black',
+    -- The default text color
+    foreground = '#bae1ff',
+    -- The default background color
+    background = '#28002b',
 
-      -- Overrides the cell background color when the current cell is occupied by the
-      -- cursor and the cursor style is set to Block
-      cursor_bg = '#04395e',
-      -- Overrides the text color when the current cell is occupied by the cursor
-      cursor_fg = 'black',
-      -- Specifies the border color of the cursor when the cursor style is set to Block,
-      -- or the color of the vertical or horizontal bar when the cursor style is set to
-      -- Bar or Underline.
-      cursor_border = '#fcf300',
+    -- Overrides the cell background color when the current cell is occupied by the
+    -- cursor and the cursor style is set to Block
+    cursor_bg = '#04395e',
+    -- Overrides the text color when the current cell is occupied by the cursor
+    cursor_fg = 'black',
+    -- Specifies the border color of the cursor when the cursor style is set to Block,
+    -- or the color of the vertical or horizontal bar when the cursor style is set to
+    -- Bar or Underline.
+    cursor_border = '#fcf300',
 
-      -- the foreground color of selected text
-      selection_fg = '#1f7a8c',
-      -- the background color of selected text
-      selection_bg = '#aeb8fe',
+    -- the foreground color of selected text
+    selection_fg = '#1f7a8c',
+    -- the background color of selected text
+    selection_bg = '#aeb8fe',
 
-      -- The color of the scrollbar "thumb"; the portion that represents the current viewport
-      scrollbar_thumb = '#222222',
+    -- The color of the scrollbar "thumb"; the portion that represents the current viewport
+    scrollbar_thumb = '#222222',
 
-      -- The color of the split lines between panes
-      split = '#444444',
+    -- The color of the split lines between panes
+    split = '#444444',
 
-      ansi = {'black', 'maroon', 'green', 'olive', 'navy', 'purple', 'teal', 'silver'},
-      brights = {'grey', 'red', 'lime', 'yellow', 'blue', 'fuchsia', 'aqua', 'white'},
+    ansi = {'black', 'maroon', 'green', 'olive', 'navy', 'purple', 'teal', 'silver'},
+    brights = {'grey', 'red', 'lime', 'yellow', 'blue', 'fuchsia', 'aqua', 'white'},
 
-      -- Arbitrary colors of the palette in the range from 16 to 255
-      indexed = {[136] = '#af8700'},
+    -- Arbitrary colors of the palette in the range from 16 to 255
+    indexed = {[136] = '#af8700'},
 
-      -- Since: 20220319-142410-0fcdea07
-      -- When the IME, a dead key or a leader key are being processed and are effectively
-      -- holding input pending the result of input composition, change the cursor
-      -- to this color to give a visual cue about the compose state.
-      compose_cursor = 'fuchsia',
+    -- Since: 20220319-142410-0fcdea07
+    -- When the IME, a dead key or a leader key are being processed and are effectively
+    -- holding input pending the result of input composition, change the cursor
+    -- to this color to give a visual cue about the compose state.
+    compose_cursor = 'fuchsia',
   },
 
   window_frame = {
@@ -64,20 +65,16 @@ return {
     inactive_titlebar_bg = '#00022d',
   },
 
-  colors = {
     tab_bar = {
       -- The color of the inactive tab bar edge/divider
-      inactive_tab_edge = '#00011e',
+      inactive_tab_edge = '#ea1254',
     },
-  },
+
 
   -- You can specify some parameters to influence the font selection;
-  -- for example, this selects a Bold, Italic font variant.
-  font = wezterm.font('JetBrains Mono', {weight ="Regular" }),
-  harfbuzz_features = {'calt=0', 'clig=0', 'liga=0'},
   font = wezterm.font_with_fallback {
     'Hack NerdFont',
-    'Droid',
+    'iosevka',
   },
 
   font_shaper = 'Harfbuzz',
@@ -87,9 +84,9 @@ return {
 
   -- This increases color saturation by 50%
   foreground_text_hsb = {
-    hue = 0.4,
+    hue = 0.8,
     saturation = 0.6,
-    brightness = 0.5,
+    brightness = 0.7,
   },
 
   hide_tab_bar_if_only_one_tab = true,
@@ -104,7 +101,10 @@ return {
   label = 'List files in /home/bitx/ ',
   args = {'ls", "-al'},
   cwd = '/home/bitx/ ',
-
+  
+  default_prog = {"/usr/bin/zsh", "-l"}, -- Spawn a zsh shell in login mode
+  default_cwd = "$HOME",
+ 
   window_backbground_opacity = 0.9,
   text_background_opacity = 0.2,
 
