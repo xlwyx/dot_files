@@ -42,14 +42,13 @@ return {
   compose_cursor = 'fuchsia',
   },
   
-  font = wezterm.font_with_fallback({
-      "iosevka",
-      "Fantasque San",
-      "hack"
-      }),
+  -- Fonts
+  font = wezterm.font 'Fantasque Sans Mono',
+  font = wezterm.font('JetBrains Mono', { weight = 'Bold', italic = true }),
   font_size = 11.0,
   bold_brightens_ansi_colors = true,
-
+  
+  
   -- This increases color saturation by 50%
   foreground_text_hsb = {
     hue = 0.8,
