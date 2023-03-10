@@ -1,46 +1,73 @@
-local wezterm = require('wezterm')
+local wezterm = require 'wezterm'
 
 return {
+  color_scheme = 'Batman',
+    tab_bar = {
+      -- The color of the strip that goes along the top of the window
+      -- (does not apply when fancy tab bar is in use)
+      background = '#402717',
 
-  colors = {
-    -- The default text color
-    foreground = '#afe7b6',
-    -- The default background color
-    background = '#280053',
+      -- The active tab is the one that has focus in the window
+      active_tab = {
+        -- The color of the background area for the tab
+        bg_color = '#2b2042',
+        -- The color of the text for the tab
+        fg_color = '#c0c0c0',
 
-    -- Overrides the cell background color when the current cell is occupied by the
-    -- cursor and the cursor style is set to Block
-    cursor_bg = '#04395e',
-    -- Overrides the text color when the current cell is occupied by the cursor
-    cursor_fg = 'black',
-    -- Specifies the border color of the cursor when the cursor style is set to Block,
-    -- or the color of the vertical or horizontal bar when the cursor style is set to
-    -- Bar or Underline.
-    cursor_border = '#fcf300',
+        -- Specify whether you want "Half", "Normal" or "Bold" intensity for the
+        -- label shown for this tab.
+        -- The default is "Normal"
+        intensity = 'Normal',
 
-    -- the foreground color of selected text
-    selection_fg = '#1f7a8c',
-    -- the background color of selected text
-    selection_bg = '#aeb8fe',
+        -- Specify whether you want the text to be italic (true) or not (false)
+        -- for this tab.  The default is false.
+        italic = false,
 
-    -- The color of the scrollbar "thumb"; the portion that represents the current viewport
-    scrollbar_thumb = '#222222',
+        -- Specify whether you want the text to be rendered with strikethrough (true)
+        -- or not for this tab.  The default is false.
+        strikethrough = false,
+      },
 
-    -- The color of the split lines between panes
-    split = '#444444',
+      -- Inactive tabs are the tabs that do not have focus
+      inactive_tab = {
+        bg_color = '#1b1032',
+        fg_color = '#808080',
 
-    ansi = {'black', 'maroon', 'green', 'olive', 'navy', 'purple', 'teal', 'silver'},
-    brights = {'grey', 'red', 'lime', 'yellow', 'blue', 'fuchsia', 'aqua', 'white'},
+        -- The same options that were listed under the `active_tab` section above
+        -- can also be used for `inactive_tab`.
+      },
 
-    -- Arbitrary colors of the palette in the range from 16 to 255
-    indexed = {[136] = '#af8700'},
+      -- You can configure some alternate styling when the mouse pointer
+      -- moves over inactive tabs
+      inactive_tab_hover = {
+        bg_color = '#3b3052',
+        fg_color = '#909090',
+        italic = true,
 
-    -- Since: 20220319-142410-0fcdea07
-    -- When the IME, a dead key or a leader key are being processed and are effectively
-    -- holding input pending the result of input composition, change the cursor
-    -- to this color to give a visual cue about the compose state.
-    compose_cursor = 'fuchsia',
-  },
+        -- The same options that were listed under the `active_tab` section above
+        -- can also be used for `inactive_tab_hover`.
+      },
+
+      -- The new tab button that let you create new tabs
+      new_tab = {
+        bg_color = '#1b1032',
+        fg_color = '#808080',
+
+        -- The same options that were listed under the `active_tab` section above
+        -- can also be used for `new_tab`.
+      },
+
+      -- You can configure some alternate styling when the mouse pointer
+      -- moves over the new tab button
+      new_tab_hover = {
+        bg_color = '#3b3055',
+        fg_color = '#909092',
+        italic = true,
+
+        -- The same options that were listed under the `active_tab` section above
+        -- can also be used for `new_tab_hover`.
+      },
+    },
 
   window_frame = {
     -- The font used in the tab bar.
@@ -64,17 +91,11 @@ return {
     inactive_titlebar_bg = '#ff6666',
   },
 
-  tab_bar = {
-  -- The color of the inactive tab bar edge/divider
-    inactive_tab_edge = '#00011e',
-  },
-
   -- You can specify some parameters to influence the font selection;
   -- for example, this selects a Bold, Italic font variant.
-  font = wezterm.font('JetBrains Mono', {weight ="Regular" }),
-  harfbuzz_features = {'calt=0', 'clig=0', 'liga=0'},
+  font = wezterm.font('JetBrains Mono', {weight ="Bold", italic = true }),
   font = wezterm.font_with_fallback {
-    'Hack NerdFont',
+    'Hack NerdFont', weight = 'medium',
     'Droid',
   },
 
@@ -85,9 +106,9 @@ return {
 
   -- This increases color saturation by 50%
   foreground_text_hsb = {
-    hue = 0.6,
-    saturation = 0.7,
-    brightness = 0.6,
+    hue = 1.0,
+    saturation = 1.0,
+    brightneslss = 0.4,
   },
 
   hide_tab_bar_if_only_one_tab = true,
@@ -103,8 +124,22 @@ return {
   args = {'ls", "-al'},
   cwd = '/home/lwyx/ ',
 
-  window_backbground_opacity = 0.9,
-  text_background_opacity = 0.3,
+  
+  window_backbground_opacity = 1.2,
+  text_foreground_opacity = 0.6,
+  window_background_image = 'Pictures/piccas_img/Cool-Anime-Background.jpg',
+
+  window_background_image_hsb = {
+    -- Darken the background image by reducing it to 1/3rd
+    brightness = 0.3,
+
+    -- You can adjust the hue by scaling its value.
+    -- a multiplier of 1.0 leaves the value unchanged.
+    hue = 1.0,
+
+    -- You can adjust the saturation also.
+    saturation = 0.9,
+  },
 
   -- How many lines of scrollback you want to retain per tab
   scrollback_lines = 3500,
@@ -114,4 +149,3 @@ return {
   -- to a single cell width
   enable_scroll_bar = true,
 }
-
