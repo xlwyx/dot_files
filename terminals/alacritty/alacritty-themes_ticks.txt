@@ -1,0 +1,5 @@
+In this page will find 'npm' to install alacritty-themes (void-linux)
+
+https://dev.to/rajasegar/alacritty-themes-a-cli-tool-to-set-themes-for-alacritty-terminal-144c
+
+![image](https://i.imgur.com/uBRtySW.jpg)
