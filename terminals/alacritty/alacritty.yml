@@ -354,38 +354,33 @@ font:
   #   - Always: Force the cursor to always blink
   #blinking: Off
 colors:
-  # Default colors
+  name: FarSide
+  author: Baskerville
   primary:
-    background: '#292C3E'
-    foreground: '#EBEBEB'
-
-  # Cursor colors
+    background: "#000000"
+    foreground: "#919191"
   cursor:
-    text: '#FF261E'
-    cursor: '#FF261E'
-
-  # Normal colors
+    text: "#000000"
+    cursor: "#919191"
   normal:
-    black: '#0d0d0d'
-    red: '#FF301B'
-    green: '#A0E521'
-    yellow: '#FFC620'
-    blue: '#1BA6FA'
-    magenta: '#8763B8'
-    cyan: '#21DEEF'
-    white: '#EBEBEB'
-
-  # Bright colors
+    black: "#303030"
+    red: "#a43261"
+    green: "#006ca5"
+    yellow: "#007086"
+    blue: "#6751a6"
+    magenta: "#913e88"
+    cyan: "#0061b1"
+    white: "#c6c6c6"
   bright:
-    black: '#6D7070'
-    red: '#FF4352'
-    green: '#B8E466'
-    yellow: '#FFD750'
-    blue: '#1BA6FA'
-    magenta: '#A578EA'
-    cyan: '#73FBF1'
-    white: '#FEFEF8'
-theme: Argonaut
+    black: "#5e5e5e"
+    red: "#ff9fc9"
+    green: "#3bd6ff"
+    yellow: "#00ddf4"
+    blue: "#d5b8ff"
+    magenta: "#ffa7f6"
+    cyan: "#93c9ff"
+    white: "#ffffff"
+theme: Baskerville - FarSide
 
 # Vi mode cursor style
 #
